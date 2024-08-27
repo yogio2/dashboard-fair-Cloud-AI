@@ -1,0 +1,151 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2C2C2C;
+    color: white;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1000px) {
+    .dashboard {
+        flex-wrap: wrap;
+    }
+    .autopilot-section, 
+  .savings-summary, 
+  .annual-expenditure, 
+  .annual-savings {
+    flex: 0 0 48%; /* Adjust the width to 48% to allow two columns */
+    margin-bottom: 20px; /* Add some space between rows */
+  }
+  .autopilot-section {
+    margin: 0 auto 20px auto;
+  }
+  }
+  
+  
+.savings-summary, .annual-expenditure, .annual-savings {
+    background-color: #3C3C3C;
+    border-radius: 10px;
+  }
+  
+  .autopilot-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+  
+  .autopilot-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    font-size: small;
+    background-image: radial-gradient(closest-side, rgba(6, 80, 45, 0.8) 50%, rgba(0, 0, 0, 0)100%);
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    /* background-color: #1B9A5E; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .circle-inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .autopilot-button p {
+    margin: 0px 0 0 0;
+    text-align: center;
+  }
+  
+  .enabled {
+    font-size: 14px;
+  }
+  
+  .savings-summary, .annual-expenditure, .annual-savings {
+    flex: 1 1;
+    margin-left: 20px;
+    font-size: larger;
+  }
+  @media only screen and (max-width: 335px) {
+    .savings-summary, .annual-expenditure, .annual-savings {
+        margin-left: 0;
+    }
+  }
+  
+  .savings-summary h3, .annual-expenditure h3, .annual-savings h3 {
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .annual-expenditure p, .annual-savings p {
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .savings-chart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .donut-chart {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(26, 161, 149) 90%, rgb(255, 132, 152) 10%);
+    transform: rotate(15deg);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-donut {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #3C3C3C;
+  }
+  
+  .savings-details {
+    margin-left: 20px;
+  }
+  
+  .savings-details p {
+    margin: 5px 0;
+    font-size: small;
+  }
+  
+  .approved {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(26, 161, 149);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .unapproved {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 132, 152);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
